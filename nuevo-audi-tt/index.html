@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Descubre el Nuevo TT | Kassik Car</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+
+        <script type="text/javascript" src="js/modernizr.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+
+        <link href="css/desktop.css" rel="stylesheet" type="text/css" media="screen and (min-width:1024px) and (max-width:2880px)">
+
+        <link href="css/ipad.css" rel="stylesheet" type="text/css" media="screen and (min-width:640px) and (max-width:1024px)">
+
+        <link href="css/iphone.css" rel="stylesheet" type="text/css" media="screen and (min-width:320px) and (max-width:640px)">
+
+        <link href="css/slicknav.css" rel="stylesheet" type="text/css">
+
+        <!-- Fav and touch icons -->
+          <link rel="apple-touch-icon-precomposed" sizes="144x144" href="imagenes/apple-touch-icon-144-precomposed.png">
+          <link rel="apple-touch-icon-precomposed" sizes="114x114" href="imagenes/apple-touch-icon-114-precomposed.png">
+          <link rel="apple-touch-icon-precomposed" sizes="72x72" href="imagenes/apple-touch-icon-72-precomposed.png">
+          <link rel="apple-touch-icon-precomposed" href="imagenes/apple-touch-icon-57-precomposed.png">
+          <link rel="shortcut icon" href="imagenes/favicon.png">
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+            {
+                Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+            }
+        </script>
+        <script src="js/jquery.js"></script>
+        <script src="js/slider.js"></script>
+
+        <script>
+          $(document).ready(function() { 
+              $("#botones").css("margin-top", ($("#cont_galeria").height() - 144 ) / 2 + 'px' );
+              $("#botones").css("width", ($(window).width() - 40 ) + 'px' );
+              $(".nav").css("left", ($(window).width() - 58 ) + 'px' );
+              $(".nav").css("top", ($("#cont_galeria").height() - 58 ) + 'px' );
+
+        });
+
+          $(window).on('resize', function(){
+              $("#botones").css("margin-top", ($("#cont_galeria").height() - 144 ) / 2 + 'px' );
+              $("#botones").css("width", ($(window).width() - 40 ) + 'px' );
+              $(".nav").css("left", ($(window).width() - 58 ) + 'px' );
+              $(".nav").css("top", ($("#cont_galeria").height() - 58 ) + 'px' );
+        });
+          
+        </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56534933-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+        <!-- Add jQuery library -->
+    <script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Add Button helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!-- Add Media helper (this is optional) -->
+    <script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox').fancybox({
+
+                maxWidth:  640,
+                scrolling : 'auto',
+                preload: true,
+                padding: [5,5,5,5],
+
+                });
+
+            /*
+             *  Different effects
+             */
+
+            // Change title type, overlay closing speed
+            $(".fancybox-effects-a").fancybox({
+                helpers: {
+                    title : {
+                        type : 'outside'
+                    },
+                    overlay : {
+                        speedOut : 0
+                    }
+                }
+            });
+
+            // Disable opening and closing animations, change title type
+            $(".fancybox-effects-b").fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                helpers : {
+                    title : {
+                        type : 'over'
+                    }
+                }
+            });
+
+            // Set custom style, close if clicked, change title type and overlay color
+            $(".fancybox-effects-c").fancybox({
+                wrapCSS    : 'fancybox-custom',
+                closeClick : true,
+
+                openEffect : 'none',
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                }
+            });
+
+            // Remove padding, set opening and closing animations, close if clicked and disable overlay
+            $(".fancybox-effects-d").fancybox({
+                padding: 0,
+
+                openEffect : 'elastic',
+                openSpeed  : 150,
+
+                closeEffect : 'elastic',
+                closeSpeed  : 150,
+
+                closeClick : true,
+
+                helpers : {
+                    overlay : null
+                }
+            });
+
+            /*
+             *  Button helper. Disable animations, hide close button, change title type and content
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : false,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    buttons : {}
+                },
+
+                afterLoad : function() {
+                    this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+                }
+            });
+
+
+            /*
+             *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+             */
+
+            $('.fancybox-thumbs').fancybox({
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : false,
+                arrows    : false,
+                nextClick : true,
+
+                helpers : {
+                    thumbs : {
+                        width  : 50,
+                        height : 50
+                    }
+                }
+            });
+
+            /*
+             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+            */
+            $('.fancybox-media')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect : 'none',
+                    closeEffect : 'none',
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+
+                    arrows : false,
+                    helpers : {
+                        media : {},
+                        buttons : {}
+                    }
+                });
+
+            /*
+             *  Open manually
+             */
+
+            $("#fancybox-manual-a").click(function() {
+                $.fancybox.open('1_b.jpg');
+            });
+
+            $("#fancybox-manual-b").click(function() {
+                $.fancybox.open({
+                    href : 'iframe.html',
+                    type : 'iframe',
+                    padding : 0
+                });
+            });
+
+            $("#fancybox-manual-c").click(function() {
+                $.fancybox.open([
+                    {
+                        href : '1_b.jpg',
+                        title : 'My title'
+                    }, {
+                        href : '2_b.jpg',
+                        title : '2nd title'
+                    }, {
+                        href : '3_b.jpg'
+                    }
+                ], {
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }
+                });
+            });
+
+
+        });
+    </script>
+
+    <script src="html5lightbox.js"></script>
+
+
+    </head>
+
+<body>
+
+
+    <!--abro wrap -->
+    <div id="wrap">
+
+        <!--abro header -->
+        <div id="header">
+
+            <!--abro logo1 -->
+            <div id="logo1"> <a href="index.html"><img src="imagenes/logo.png" width="352" height="75"></a>
+                <!--cierro logo1 --></div>
+
+            <!--abro logo2 -->
+            <div id="logo2">
+                <img src="imagenes/logo2.png" width="336" height="75">
+                <!--cierro logo1 --></div>
+
+            <!--cierro header --></div>
+
+        <!--abro cont_video -->
+        <div id="cont_video">
+
+            <!--abro play -->
+            <div id="play">
+                <a href="video/Audi_TTS_You_Dare_or_You_Dont_45_ENG_1280x720p25.mp4" class="html5lightbox" data-width="1280" data-height="720" onClick="_gaq.push(['_trackEvent', 'Video-TT', 'Play', 'Landing-Video-TT'];"><img src="imagenes/play.png"></a>
+                <!--cierro play --></div>
+
+            <!--abro fondo_video -->
+            <div id="fondo_video">
+                <img src="imagenes/imagen_video.jpg">
+                <!--cierro fondo_video --></div>
+
+
+
+
+
+            <!--cierro cont_video --></div>
+
+
+
+        <!--abro cont_slider -->
+        <div id="cont_slider">
+
+            <!--abro tittle_slider -->
+            <div id="tittle_slider">
+                <strong>+</strong> aT<font>T</font>ractivo
+                <!--cierro tittle_slider --></div>
+
+            <!--abro txt_slider -->
+            <div id="txt_slider">
+
+                Te invitamos a conocer lo nuevo de Audi en Klassik Car, nuevo Audi TT 100% renovado, nueva tecnología, nuevo diseño, la nueva era Audi ya está en Klassik Car.
+                <!--cierro txt_slider --></div>
+
+            <!--abro cont_galeria -->
+            <div id="cont_galeria">
+
+
+
+                <!--abro botones -->
+                <div id="botones">
+
+                    <!--abro back -->
+                    <div id="back" onclick="prev();
+                return false;">
+                        <img src="imagenes/slider/arrow_off_2.png">
+                        <!--ciero back --></div>
+
+                    <!--abro next -->
+                    <div id="next" onclick="next();
+                            return false;">
+                        <img src="imagenes/slider/arrow_off.png">
+                        <!--ciero next --></div>
+                    <!--cierro botones --> </div>
+
+
+                <!--abro boton_descarga  -->
+                <div  id="boton_descarga">
+                    <ul class="nav">
+                        <li><a href="" onclick="return false;"></a>
+                            <ul>
+                                <li><a id="sm1" href="imagenes/slider/wallpapers/op1/slide1.jpg" target="_blank">1366 x 768</a></li>
+                                <li><a id="sm2" href="imagenes/slider/wallpapers/op2/slide1.jpg" target="_blank">1440 x 768</a></li>
+                                <li><a id="sm3" href="imagenes/slider/wallpapers/op3/slide1.jpg" target="_blank">1680 x 1050</a></li>
+                                <li><a id="sm4" href="imagenes/slider/wallpapers/op4/slide1.jpg" target="_blank">1920 x 1080</a></li>
+                                <li><a id="sm5" href="imagenes/slider/wallpapers/op5/slide1.jpg" target="_blank">2560 x 1440</a></li>			
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--cierro boton_descarga --> </div>
+
+                <!--abro slider  -->
+                <div id="slider">
+
+
+                    <img id="1" src="imagenes/slider/slide1.jpg" >
+                    <img id="2" src="imagenes/slider/slide2.jpg" >
+                    <img id="3" src="imagenes/slider/slide3.jpg" >
+                    <img id="4" src="imagenes/slider/slide4.jpg" >
+                    <!--cierro slider  --></div>
+
+                <div id="cont_barra">
+                    <!--abro barra_slider  -->
+                    <div id="barra_slider">
+                        <div class="botonpag" id="p1" onclick="nav(1);
+                                return false"></br></div>
+                        <div class="botonpag" id="p2" onclick="nav(2);
+                                return false"></br></div>
+                        <div class="botonpag" id="p3" onclick="nav(3);
+                                return false"></br></div>
+                        <div class="botonpag" id="p4" onclick="nav(4);
+                                return false"></br></div>
+                        <!--cierro barra_slider --></div>
+                    <!--cierro cont_barra -->   </div>
+
+                <!--cierro cont_galeria --></div>
+            <!--cierro cont_slider --></div>
+
+        <!--abro tittle_tecno -->
+        <div id="tittle_tecno">
+            <strong>+</strong> <font>T</font>Tecnología
+            <!--cierro tittle_tecno --></div>
+
+        <!--abro txt_tecno -->
+        <div id="txt_tecno"><!--cierro txt_tecno --></div>
+
+        <!--abro footer -->
+        <div id="footer">
+            <div id="cont_tittle_equip">
+                <!--abro tittle_equip -->
+                <div id="tittle_equip">
+                    EQUIPAMIENTO DE SERIE
+                    <!--cierro tittle_equip --></div>
+            </div>
+            <!--abro cajas -->
+            <div id="cajas">
+                <!--abro frase1 -->
+                <div id="frase1">
+                    <ul> <li>Audi VIRTUAL COCKPIT.</li></ul>
+                    <ul><li>Airbags frontales, laterales y de cabeza con desactivación del airbag del acompañante.</li></ul>
+                    <ul><li>Volante deportivo multifuncional plus de cuero en diseño de 3 radios con levas de cambio, con ajuste de altura y profundidad, en contorno grueso y achatado en la parte inferior.</li></ul>
+                    <ul><li> MMI® radio.</li></ul>
+                    <ul><li>Anclaje para silla de niños ISOFIX en asiento de copiloto.</li></ul>
+                    <ul><li> Retrovisor interior con ajuste automático de posición antideslumbrante.</li></ul>
+                    <ul><li> Dirección servoasistida electromecánica.</li></ul>
+                    <!--cierro frase1 --></div>
+
+
+
+                <div id="frase2">
+                    <ul><li>Inserciones en aluminio en interior y en molduras de entrada Alarma antirrobo volumétrica con protección contra remolque Precios y equipamiento sujeto a cambios sin previo aviso y mando a distancia.</li></ul> 
+                    <ul><li> Ayuda de aparcamiento trasero. </li></ul>
+                    <ul><li> Asientos deportivos tapizados en cuero Milano Apoyabrazos de las puertas y consola central en cuero.</li></ul>
+                    <ul><li> ABS, EBD y ESC. </li></ul>                
+                    <ul><li>Control Crucero.</li></ul>               
+                    <ul><li> Freno de mano electromecánico.</li></ul>            
+                    <ul><li> Start / stop con recuperación de energía. </li></ul>               
+                    <ul><li> Climatronic.</li></ul>
+                    <!--cierro frase2 --></div>
+
+
+                <!--abro frase3 -->
+                <div id="frase3">
+                    <ul><li> Bluetooth con Audi music interface y Connectivity package Audi sound system, con 9 altavoces y amplificador de 5 canales, potencia total 155 vatios.</li></ul>              
+                    <ul><li> Limpiaparabrisas con sensor de lluvia.</li></ul>                 
+                    <ul><li>Faros LED y luces traseras LED con sensor de luz.</li></ul>                 
+                    <ul><li> Lavafaros.</li></ul>                 
+                    <ul><li>Regulación de luces dinámica.</li></ul> 
+                    <ul><li>Retrovisores exteriores con regulación eléctrica, calefaccionables y abatibles eléctricamente.</li></ul>
+                    <ul><li>Llantas de aleación ligera en diseño de 10 rayos, 8.5J x 18, con neumáticos 245/40 R18.</li></ul> 
+                    <!--cierro frase3 --></div>
+
+                <!--cierro cajas --></div>
+
+
+            <!--abro ficha_tecnica -->
+            <div id="ficha_tecnica">
+                <ul class="nav2">
+                    <li><a href="ficha-tecnica/ficha-tecnica-TT.pdf" target="_blank"><img src="imagenes/descarga.png"></a>
+                        <ul>
+                            <li><a href="ficha-tecnica/ficha-tecnica-TT.pdf" target="_blank"><img src="imagenes/descarga_on.png"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--cierro ficha_tecnica --></div>
+            <!--abro ultimo_texto -->
+            <div id="ultimo_texto">
+
+                <!--abro cotiza -->
+                <div id="cotiza">
+                    <a>cotiza</a> ahora el <font>T</font>Tuyo
+                    <!--cierro cotiza --></div>
+
+                <!--abro btn_cotiza -->
+                <div id="btn_cotiza"> <a class="fancybox fancybox.iframe" href="http://www.klassikcar.cl/audi/cotizar-tt/"><img src="imagenes/boton.png" width="263" height="56"></a>
+                    <!--cierro btn_cotiza --></div>
+
+                <!--cierro ultimo_texto --></div>
+
+
+            <!--abro logo_footer -->
+            <div id="logo_footer"> <a href="index.html"><img src="imagenes/logo.png" width="352" height="75"></a>
+                <!--cierro logo_footer --></div>
+            <!--cierro footer --></div>
+        <!--Cierro wrap --></div>
+</body>
+</html>
