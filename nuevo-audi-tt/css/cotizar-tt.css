@@ -1,0 +1,114 @@
+/*::::::::::::::::::::::::::FONT EMBEDDED:::::::::::::::::::::::::::::::::*/
+
+@font-face {
+  font-family: 'AudiType-ExtendedNormal';
+  src: url('../fonts/AudiType-ExtendedNormal.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-ExtendedNormal.otf')  format('opentype'),
+	     url('../fonts/AudiType-ExtendedNormal.woff') format('woff'), url('../fonts/AudiType-ExtendedNormal.ttf')  format('truetype'), url('../fonts/AudiType-ExtendedNormal.svg#AudiType-ExtendedNormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudiType-ExtendedBold';
+  src: url('../fonts/AudiType-ExtendedBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-ExtendedBold.otf')  format('opentype'),
+	     url('../fonts/AudiType-ExtendedBold.woff') format('woff'), url('../fonts/AudiType-ExtendedBold.ttf')  format('truetype'), url('../fonts/AudiType-ExtendedBold.svg#AudiType-ExtendedBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudiType-Normal';
+  src: url('../fonts/AudiType-Normal.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-Normal.otf')  format('opentype'),
+	     url('../fonts/AudiType-Normal.woff') format('woff'), url('../fonts/AudiType-Normal.ttf')  format('truetype'), url('../fonts/AudiType-Normal.svg#AudiType-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudiType-Bold';
+  src: url('../fonts/AudiType-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-Bold.otf')  format('opentype'),
+	     url('../fonts/AudiType-Bold.woff') format('woff'), url('../fonts/AudiType-Bold.ttf')  format('truetype'), url('../fonts/AudiType-Bold.svg#AudiType-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*::::::::::::::::::::::::::FONT EMBEDDED:::::::::::::::::::::::::::::::::*/
+
+body{
+	margin: 0;
+}
+
+.audi-tt{
+	width: 640px;
+	min-height: 300px;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.car-audi-tt {
+  width: 300px;
+  height: 300px;
+  margin: 0 19px 0 0;
+  float: left;
+  background: #000000 url('http://www.klassikcar.cl/audi/nuevo-audi-tt/imagenes/bg-cotizar.jpg') no-repeat center center;
+}
+
+.form-audi-tt {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 10px 0 0 0;
+}
+
+.box-input{
+	list-style: none;
+}
+
+.box-input label{
+	font-family: 'AudiType-Normal';
+	margin: 0;
+}
+
+.box-input div input{
+	width: 240px;
+	height: 32px;
+	background-color: #2d2d2d;
+	border: 1px solid #555555;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 5px 7px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+.ginput_container{
+	margin: 3px 0 15px 0;
+}
+
+.gform_button{
+	width: 130px;
+	height: 35px;
+	background-color: #df1e39;
+	font-family: 'AudiType-ExtendedNormal';
+	font-size: 15px;
+	color: #FFFFFF;
+	border: 3px solid #262626;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 3px 0 0 0;
+	margin: 8px 20px 0 0;
+	float: right;
+}
+
+.gform_button:hover {
+	cursor: pointer;
+	background-color: #fb2543;
+	border-color: #454545;
+}
+
+.gform_confirmation_wrapper{
+	margin-top: 80px;
+	font-family: 'AudiType-ExtendedNormal';
+	font-size: 15px;
+}

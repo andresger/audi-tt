@@ -1,0 +1,590 @@
+/*::::::::::::::::::::::::::FONT EMBEDDED:::::::::::::::::::::::::::::::::*/
+
+@font-face {
+  font-family: 'AudiType-ExtendedNormal';
+  src: url('../fonts/AudiType-ExtendedNormal.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-ExtendedNormal.otf')  format('opentype'),
+	     url('../fonts/AudiType-ExtendedNormal.woff') format('woff'), url('../fonts/AudiType-ExtendedNormal.ttf')  format('truetype'), url('../fonts/AudiType-ExtendedNormal.svg#AudiType-ExtendedNormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudiType-ExtendedBold';
+  src: url('../fonts/AudiType-ExtendedBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-ExtendedBold.otf')  format('opentype'),
+	     url('../fonts/AudiType-ExtendedBold.woff') format('woff'), url('../fonts/AudiType-ExtendedBold.ttf')  format('truetype'), url('../fonts/AudiType-ExtendedBold.svg#AudiType-ExtendedBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudiType-Normal';
+  src: url('../fonts/AudiType-Normal.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-Normal.otf')  format('opentype'),
+	     url('../fonts/AudiType-Normal.woff') format('woff'), url('../fonts/AudiType-Normal.ttf')  format('truetype'), url('../fonts/AudiType-Normal.svg#AudiType-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AudiType-Bold';
+  src: url('../fonts/AudiType-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/AudiType-Bold.otf')  format('opentype'),
+	     url('../fonts/AudiType-Bold.woff') format('woff'), url('../fonts/AudiType-Bold.ttf')  format('truetype'), url('../fonts/AudiType-Bold.svg#AudiType-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*::::::::::::::::::::::::::FONT EMBEDDED:::::::::::::::::::::::::::::::::*/
+
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000000; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:48px;
+    height:48px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../imagenes/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-24px 0 0 -24px; /* is width and height divided by two */
+}
+
+/* FIN Preloader */
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color:#000;
+
+}
+#wrap {
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#logo1 {
+    width:352px;
+    height:75px;
+    float:left;
+	
+}
+
+#logo2 {
+    width:336px;
+    height:75px;
+    float:right;
+}
+
+#header {
+    width:100%;
+    height:75px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#cont_video {
+	max-width:100%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	z-index:1;
+}
+
+#play {
+	max-width:100%;
+	height:auto;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:30;
+}
+
+#fondo_video {
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:1;
+}
+
+#botones {
+    width:100%;
+    height:108px;
+    margin-left:auto;
+    margin-right:auto;
+    position:absolute;
+    z-index:30;
+    margin-top:120px;
+	display:none;
+
+
+}
+
+#back {
+    width:88px;
+    height:108px;
+    float:left;
+
+
+}
+
+#next {
+    width:88px;
+    height:108px;
+    float:right;
+}
+
+#play {
+    position:absolute;
+}
+
+#cont_slider {
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#tittle_slider {
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:35px;
+    text-align:center;
+    color: #FFF;
+    font-size:70px;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#txt_slider {
+    width:70%;
+    height:87px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:40px;
+    font-size:16px;
+    color:#636363;
+    text-align:center;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#cont_galeria {
+    width:100%;
+    height:auto;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				color:#7f7f7f;
+				text-decoration:none;
+				display:block;
+				font-family: 'Oxygen', sans-serif;
+				font-size:12px;
+				float:left;
+				width:131px;
+				height:15px;
+				padding-left:30px;
+				margin-right:10px
+				padding-top:5px;
+				padding-bottom:5px;
+						
+			}
+			
+			
+			
+			
+			.nav li ul {
+				padding-top:10px;
+				display:none;
+				position:relative;
+				right:130px;
+				top:-105px;
+				background-image:url(../imagenes/slider/icono_slidebgr.png);
+				width:131px;
+				height:120px;
+				background-repeat:no-repeat;
+				float:left;	
+				
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				float:right;
+				top:0px;
+				background-image:url(../imagenes/slider/icono_slidebgr.png);
+				
+				
+			}
+			
+.nav {
+	background-image: url(../imagenes/slider/icono_slider.png);
+	background-repeat:no-repeat;
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	z-index: 60;
+	left: 370px;
+	top: 100px;
+}
+
+.nav > li {
+				float:left;
+			}
+			
+			.nav2 li a {
+				color:#fff;
+				text-decoration:none;
+				padding:0px 0px 0px 0px;
+				display:block;
+				float:right;
+				width:38px;
+				height:38px;
+			}
+			
+			
+			
+			.nav2 li ul {
+				display:none;
+				position:absolute;
+				min-width:5px;
+				float:left;
+			}
+			
+			.nav2 li:hover > ul {
+				display:block;
+				float:left;
+			}
+			
+			.nav2 li ul li {
+				position:relative;
+				float:left;
+			}
+			
+			.nav2 li ul li ul {
+				
+				top:0px;
+				float:left;
+				
+			}
+			.nav2 li ul li a {
+			
+				width:195px;
+				height:38px;
+				float:left;
+				margin: 0px 0px 0px -200px;
+				position:absolute;
+				
+			}
+			
+			
+
+#boton_descarga{
+	width: 171px;
+	height: 121px;
+	position: absolute;
+	z-index: 40;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+	left: 907px;
+	top: 288px;
+	visibility: visible;
+	display:none;
+}
+#slider {
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    position:relative;
+    z-index:1;
+
+}
+
+#slider img{
+    display: none;
+}
+
+#barra_slider {
+    width:320px;
+    height:20px;
+    margin-left:auto;
+    margin-right:auto;
+	background-color:#313131;
+}
+
+#cont_barra {
+    width:100%;
+    height:20px;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#1a1a1a;
+
+	border-bottom:solid 1px #333;
+}
+
+.botonpag{
+    width: 80px;
+	height:20px;
+	margin-left:auto;
+    margin-right:auto;
+	
+}
+
+#p1{
+    float:left;
+}
+
+#p2{
+    float:left;
+}
+
+#p3{ 
+    float:left;
+}
+
+#p4{
+    float:left; 
+}
+
+#tittle_tecno {
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:35px;
+    font-size:70px;
+    color: #FFF;
+    text-align:center;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#txt_tecno {
+    width:70%;
+    height:87px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:40px;
+    font-size:16px;
+    color:#636363;
+font-family: 'Oxygen', sans-serif;
+    text-align:center;
+}
+
+#footer {
+    width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#cont_tittle_equip {
+    background-color:#262626;
+    background-repeat:no-repeat;
+    background-size:100%;
+    max-width:100%;
+    height:38px;
+    color:#c2c2c2;
+	font-family: 'Oxygen', sans-serif;
+    text-align:center;
+    font-size:18px;
+	padding-top:5px;
+}
+#tittle_equip {
+    width:40%;
+    height:44px;
+    color:#c2c2c2;
+font-family: 'Oxygen', sans-serif;
+    text-align:center;
+    font-size:18px;
+    padding-top:4px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#cajas {
+    max-width:100%;
+    height:700px;
+	padding-top:40px;
+
+}
+
+#frase1 {
+font-family: 'Oxygen', sans-serif;
+    font-size:15px;
+    color:#636363;
+    width:60%;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+#frase2 {
+font-family: 'Oxygen', sans-serif;
+  font-size:15px;
+    color:#636363;
+    width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:40px;
+
+}
+#frase3 {
+font-family: 'Oxygen', sans-serif;
+  font-size:15px;
+    color:#636363;
+    width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:40px;
+}
+
+#tittle_slider strong {
+    color:#df1e39;
+    font-size:70px;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#footer strong {
+    color:#df1e39;
+    font-size:10px;
+	font-family: 'Oxygen', sans-serif;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+
+}
+
+#tittle_slider font {
+    color:#636363;
+    font-size:70px;
+	font-family: 'Oxygen', sans-serif;
+
+}
+
+#tittle_tecno font {
+    color:#636363;
+    font-size:70px;
+	font-family: 'Oxygen', sans-serif;
+
+}
+
+#tittle_tecno strong {
+    color:#df1e39;
+    font-size:70px;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#frase1 li {
+    list-style-image:url(../imagenes/vinieta.png);
+}
+#frase2 li {
+    list-style-image:url(../imagenes/vinieta.png);
+}
+#frase3 li {
+    list-style-image:url(../imagenes/vinieta.png);
+}
+
+#ultimo_texto {
+    width:100%;
+    height:277px;
+    margin-top:70px;
+    border:none;
+    border-bottom:solid 1px #333;
+    display:inherit;
+}
+
+#cotiza {
+    width:70%;
+    height:auto;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:40px;
+    font-size:50px;
+    color: #FFF;
+    text-align:center;
+    border:none;
+    border-top:solid 2px #333;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#cotiza font {
+    color:#636363;
+    font-size:50x;
+
+}
+#cotiza a {
+    color:#df1e39;
+    font-size:50x;
+
+}
+
+#btn_cotiza {
+    width:264px;
+    height:57px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+
+}
+
+#btn_cotiza:hover {
+    background-image:url(../imagenes/boton_on.png);
+}
+
+#logo_footer {
+    width:352px;
+    height:75px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#ficha_tecnica {
+    width:38px;
+    height:38px;
+    float:right;
+    margin-right:9%;
+	display:none;
+}
